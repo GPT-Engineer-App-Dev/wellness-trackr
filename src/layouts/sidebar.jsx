@@ -22,6 +22,11 @@ const navItems = [
     to: "/log-workout",
     icon: <Activity className="h-4 w-4" />,
   },
+  {
+    title: "Progress Tracking",
+    to: "/progress-tracking",
+    icon: <Activity className="h-4 w-4" />,
+  },
 ];
 
 const Layout = () => {
