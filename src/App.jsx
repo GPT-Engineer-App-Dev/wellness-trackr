@@ -8,6 +8,7 @@ import Index from "./pages/Index.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import Workouts from "./pages/Workouts.jsx";
 import Profile from "./pages/Profile.jsx";
+import LogWorkout from "./pages/LogWorkout.jsx";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +17,11 @@ export const navItems = [
     title: "Dashboard",
     to: "/dashboard",
     icon: <Home className="h-4 w-4" />,
+  },
+  {
+    title: "Log Workout",
+    to: "/log-workout",
+    icon: <Activity className="h-4 w-4" />,
   },
 ];
 
@@ -31,6 +37,7 @@ const App = () => {
               <Route path="dashboard" element={<Dashboard />} />
               <Route path="workouts" element={<Workouts />} />
               <Route path="profile" element={<Profile />} />
+              <Route path="log-workout" element={<LogWorkout />} />
             </Route>
           </Routes>
         </Router>
